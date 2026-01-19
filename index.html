@@ -2,40 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>XYZ Pet Adoption</title>
+  <title>Pet Adoption</title>
+
+  <!-- Meta para responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Welcome XYZ Pet Adoption!</h1>
-    <p>Consider adopting a pet today. We have cats, dogs, rabbits and more.</p>
+  <!-- TOPO / LOGO -->
+  <header class="header">
+    <img 
+      src="https://cdn-icons-png.flaticon.com/512/194/194279.png" 
+      alt="Dog logo"
+      class="logo"
+    >
+    <h1>Pet Adoption</h1>
+    <p>Adopt love. Change a life.</p>
   </header>
 
-  <main>
-    <section>
-      <h2>See our cats!</h2>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- CARD GATO -->
+    <section class="card">
       <img 
         src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" 
-        alt="Two tabby kittens sleeping together on a couch">
-      <button id="catBtn">Adopt a cat</button>
-      <p id="catMessage" class="message"></p>
+        alt="Two kittens sleeping"
+      >
+
+      <h2>Adopt a Cat</h2>
+      <p>Friendly, calm and perfect for cozy homes.</p>
+
+      <button onclick="adoptPet('cat')">Adopt Cat</button>
+      <span id="catMessage" class="message"></span>
     </section>
 
-    <section>
-      <h2>See our dogs!</h2>
+    <!-- CARD CACHORRO -->
+    <section class="card">
       <img 
         src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/dogs.jpg" 
-        alt="Two dogs playing together">
-      <button id="dogBtn">Adopt a dog</button>
-      <p id="dogMessage" class="message"></p>
+        alt="Two dogs playing"
+      >
+
+      <h2>Adopt a Dog</h2>
+      <p>Loyal, playful and a true best friend.</p>
+
+      <button onclick="adoptPet('dog')">Adopt Dog</button>
+      <span id="dogMessage" class="message"></span>
     </section>
+
   </main>
 
-  <footer>
-    <p>© 2026 XYZ Pet Adoption</p>
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <p>© 2026 Pet Adoption Project</p>
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
-</html>Estrutura da página
+</html>
